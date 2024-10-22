@@ -1,8 +1,10 @@
 package org.example;
 
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+
 import java.util.ArrayList;
 import java.util.List;
-
 
 public class PortfolioTester {
 
@@ -19,8 +21,6 @@ public class PortfolioTester {
     public void setUp(){
         //Create a portfolio object which is to be tested
         portfolio = new Portfolio();
-
-
 
         //Create the mock object of stock service
         stockService = mock(StockService.class);
